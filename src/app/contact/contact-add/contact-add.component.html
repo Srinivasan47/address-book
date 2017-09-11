@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-sm-8 app-header">
+     	<a class="back-btn" [routerLink]="['../list']"><i class="fa fa-arrow-left"></i></a> <h4>Add Contact</h4>
+	</div>
+</div>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="contactName" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="contactName" placeholder="Contact Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contactNumber" class="col-sm-2 control-label">Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contactEmail" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="contactEmail" placeholder="Contact Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contactAddress" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" id="contactAddress" placeholder="Address"></textarea> 
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="cityName" class="col-sm-2 control-label">City</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="cityName" placeholder="City">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contactAddress" class="col-sm-2 control-label">Group</label>
+    <div class="col-sm-10">
+      <group-dropdown [groups]="groupList" (select)="selectedGroup($event)" ></group-dropdown>      
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success">Save</button>
+      <button type="reset" class="btn btn-danger">Cancel</button>
+    </div>
+  </div>
+</form>

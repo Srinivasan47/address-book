@@ -1,0 +1,42 @@
+<div class="row marketing">
+    <div class="col-sm-12">
+       	<div class="row">
+       		<div class="col-sm-8 col-xs-8">
+       			<div class="form-group">
+		  			<input type="text" class="form-control rounded-input" aria-label="Search" placeholder="Search contact">			  
+				</div>
+			</div>
+		    <div class="col-sm-4">
+		    	<span class="pull-right"><a  data-toggle="tooltip" data-placement="top" title="Add new contact" class="btn btn-primary" [routerLink]="['../add']"><i class="fa fa-plus" aria-hidden="true"></i></a></span>
+		    </div>
+		</div>
+       <ul class="contact-list">
+          	<li class="contact-item"><a (click)="viewContact()">
+          		<div class="media">
+			  		<div class="media-left">
+			    		<a href="#">
+			      			<img class="media-object" src="http://via.placeholder.com/48x48" alt="Contact Name">
+			    		</a>
+			 		 </div>
+			 		 <div class="media-body">
+			    		<h4 class="media-heading">Name</h4>
+			    		<p>City</p>
+			  		</div>
+				</div></a>
+          	</li>
+          	<li class="contact-item"><a (click)="viewContact()">
+          		<div class="media">
+			  		<div class="media-left">
+			    		<a href="#">
+			      			<img class="media-object" src="http://via.placeholder.com/48x48" alt="Contact Name">
+			    		</a>
+			 		 </div>
+			 		 <div class="media-body">
+			    		<h4 class="media-heading">Name</h4>
+			    		<p>City</p>
+			  		</div>
+				</div></a>
+          	</li>
+        </ul>            
+    </div>
+ </div>

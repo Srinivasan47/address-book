@@ -1,0 +1,4 @@
+<div class="dropdown" (click)="showOption()">{{selected}}</div>
+<ul [hidden]="option" class="group-list">
+	<li *ngFor="let group of groups"><a (click)="getGroupValue(group.id)"><input type="checkbox" id="{{group.value}}" ><label for="{{group.value}}">{{group.value}}</label></a></li>
+</ul>

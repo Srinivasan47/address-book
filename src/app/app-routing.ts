@@ -1,0 +1,15 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import {HomeComponent} from './home/home.component';
+import {ContactComponent} from './contact/contact.component';
+const routes: Routes = [
+{path:'', pathMatch:'full', redirectTo:'/contact/list'},
+{path:'home', loadChildren: 'app/home/home.module#HomeModule', data: { preload: true }},
+{path:'contact', loadChildren: 'app/contact/contact.module#ContactModule'}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

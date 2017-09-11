@@ -1,0 +1,5 @@
+.dropdown{border: 1px solid #ccc; padding: 5px 10px;}
+ul.group-list{margin: 0; padding: 0; list-style-type: none; position: absolute; height: 150px; overflow-y: auto;width: 95%; z-index: 999;background-color: #fff; border: 1px solid #ccc;}
+ul.group-list li{ padding: 5px 10px; border-bottom: 1px solid #e2e2e2;}
+ul.group-list li input[type=checkbox]{margin: 0 !important; vertical-align:middle;}
+ul.group-list li label{ overflow: hidden; white-space: nowrap; margin: 0; margin: 0; vertical-align:middle;}

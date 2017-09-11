@@ -1,0 +1,39 @@
+<div class="row marketing">
+     <div class="col-sm-12">
+      	<div class="row">
+       		<div class="col-sm-8 col-xs-6">
+       			<a class="back-btn" [routerLink]="['../list']"><i class="fa fa-arrow-left"></i></a>
+			</div>
+		    <div class="col-sm-4">
+		    	<span class="pull-right">
+		    		<a class="btn btn-primary" [routerLink]="['../../edit', id]"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+		    		<a class="btn btn-primary" (click)="deleteContact(1)"> <i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+		    	</span>
+		    </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-xs-12">			
+			<img src="http://via.placeholder.com/100x100" alt="profile" class="img-circle">
+		</div>
+		<div class="col-sm-8 col-xs-12">
+			<h4>Contact Name</h4>
+			<p>City</p>
+		</div>
+	</div> 
+	<div class="row">
+		<div class="col-sm-12 col-xs-12">
+			<h2><span>Information</span></h2>
+			<ul class="information">
+				<li>sample@example.com</li>
+				<li>9876541023</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-xs-12">
+			<h2><span>Address</span></h2>
+			<p>abc complex, car street, city</p>
+		</div>
+	</div>
+</div>
